@@ -1,0 +1,331 @@
+.eye-health-page {
+  padding: 20px;
+}
+
+.category-selector {
+  display: flex;
+  gap: 12px;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.category-selector::-webkit-scrollbar {
+  display: none;
+}
+
+.category-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 20px;
+  border: 2px solid #e0e0e0;
+  background: white;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+.category-btn:hover {
+  border-color: var(--theme-color);
+}
+
+.category-btn.active {
+  background: var(--theme-color);
+  color: white;
+  border-color: var(--theme-color);
+}
+
+.category-icon {
+  font-size: 24px;
+}
+
+.content-area {
+  margin: 20px;
+}
+
+/* Tips Section */
+.tips-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tip-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.tip-card:hover {
+  border-color: var(--theme-color);
+  transform: translateX(4px);
+}
+
+.tip-card.completed {
+  background: #f0f9ff;
+  border-color: var(--theme-color);
+}
+
+.tip-icon {
+  font-size: 32px;
+  min-width: 50px;
+  text-align: center;
+}
+
+.tip-content {
+  flex: 1;
+}
+
+.tip-content h3 {
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.tip-content p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.tip-check {
+  font-size: 24px;
+  color: var(--theme-color);
+  min-width: 30px;
+  text-align: center;
+}
+
+/* Exercises Section */
+.exercises-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.exercise-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  transition: transform 0.3s ease;
+}
+
+.exercise-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.exercise-header h3 {
+  color: #333;
+}
+
+.duration {
+  background: var(--theme-color);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.exercise-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Nutrition Section */
+.nutrition-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.nutrient-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.nutrient-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nutrient-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.nutrient-card h3 {
+  margin-bottom: 12px;
+  color: var(--theme-color);
+}
+
+.foods {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.benefit {
+  color: #333;
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Habits Section */
+.habits-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.habit-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.habit-card h3 {
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.habit-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.habit-card li {
+  padding: 8px 0;
+  color: #666;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 24px;
+}
+
+.habit-card li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--theme-color);
+  font-weight: bold;
+}
+
+/* Prevention Section */
+.prevention-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.prevention-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.prevention-card h3 {
+  margin-bottom: 16px;
+  color: var(--theme-color);
+}
+
+.prevention-card p {
+  color: #666;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.prevention-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.prevention-card li {
+  padding: 8px 0;
+  color: #666;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 24px;
+}
+
+.prevention-card li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--theme-color);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Progress Card */
+.progress-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 20px;
+  text-align: center;
+}
+
+.progress-card h3 {
+  margin-bottom: 16px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--theme-color);
+  border-radius: 6px;
+  transition: width 0.5s ease;
+}
+
+.progress-card p {
+  color: #666;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .exercises-section,
+  .nutrition-section,
+  .habits-section,
+  .prevention-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .category-selector {
+    gap: 8px;
+  }
+  
+  .category-btn {
+    min-width: 80px;
+    padding: 10px 16px;
+  }
+}
