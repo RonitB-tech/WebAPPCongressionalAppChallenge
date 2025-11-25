@@ -313,4 +313,5 @@ if __name__ == '__main__':
     print(f"  - Retinopathy: {'✅' if models_loaded['retinopathy'] else '❌'}")
     print(f"  - Pink Eye: {'✅' if models_loaded['pinkeye'] else '❌'}")
     print("="*50 + "\n")
-    app.run(debug=True, host='0.0.0.0', port=5005)
+    port = int(os.environ.get('PORT', 5005))
+    app.run(debug=False, host='0.0.0.0', port=port)
